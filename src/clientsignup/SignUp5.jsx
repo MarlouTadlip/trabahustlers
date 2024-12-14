@@ -8,7 +8,7 @@ function SignUp5() {
       <div className="flex h-screen">        
         <div className="w-1/2 flex flex-col bg-white pl-10 pb-10 pr-10 pt-7">
             <h1 className="pb-10">5/8 <b className="ml-3">Client Registration</b></h1>
-            <h1 className="text-4xl font-bold mb-4 mt-1">Your Project Deliverables</h1>
+            <h1 className="text-4xl font-bold mb-4 mt-1">YOUR PROJECT DELIVERABLES</h1>
             <p className="opacity-50 mb-6">Specify the key outputs you expect from this project to ensure clear expectations.</p>
 
             <h1 className="font-semibold text-lg mt-2">Deliverable Checklist:</h1>
@@ -54,7 +54,7 @@ function SignUp5() {
             </div>
         </div>
 
-        <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('signup4client.svg')" }}>
+        <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('signup5client.svg')" }}>
         </div>
       </div>
     <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">

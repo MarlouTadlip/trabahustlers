@@ -26,6 +26,9 @@ import SignUp2Client from './clientsignup/SignUp2.jsx';
 import SignUp3Client from './clientsignup/SignUp3.jsx';
 import SignUp4Client from './clientsignup/SignUp4.jsx';
 import SignUp5Client from './clientsignup/SignUp5.jsx';
+import SignUp6Client from './clientsignup/SignUp6.jsx';
+import SignUp7Client from './clientsignup/SignUp7.jsx';
+import SignUp8Client from './clientsignup/SignUp8.jsx';
 
 const router = createBrowserRouter([
   {
@@ -115,6 +118,18 @@ const router = createBrowserRouter([
   {
     path: '/signup-client-5',
     element: <SignUp5Client/>
+  },
+  {
+    path: '/signup-client-6',
+    element: <SignUp6Client/>
+  },
+  {
+    path: '/signup-client-7',
+    element: <SignUp7Client/>
+  },
+  {
+    path: '/signup-client-8',
+    element: <SignUp8Client/>
   }
 ]);
 
