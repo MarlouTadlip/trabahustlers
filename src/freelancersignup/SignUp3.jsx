@@ -149,7 +149,7 @@ function SignUp3(){
         </div>
 
         <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
-            <div className="bg-[#00B676] h-1.5 rounded-full dark:bg-blue-500" style={{width: '60%'}}></div>
+            <div className="bg-[#00B676] h-1.5 rounded-full " style={{width: '60%'}}></div>
         </div>
 
         <div className="flex justify-between mt-8 pl-7 pr-7 pb-7">

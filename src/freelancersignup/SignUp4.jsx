@@ -18,7 +18,7 @@ function SignUp4() {
                         <p>Total amount the client will see.</p>
                     </div>
                     <div className="flex max-h-10">
-                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Placeholder" required />
+                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Placeholder" required />
                         <p> /hr</p>
                     </div>
                     <div>
@@ -26,7 +26,7 @@ function SignUp4() {
                         <p>This fee supports platform services such as secure payments and customer support.</p>
                     </div>
                     <div className="flex max-h-10">
-                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Placeholder" required />
+                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Placeholder" required />
                         <p> /hr</p>
                     </div>
                     <div>
@@ -34,15 +34,15 @@ function SignUp4() {
                         <p>This is the estimated amount you’ll receive after service fees.</p>
                     </div>
                     <div className="flex max-h-10">
-                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Placeholder" required />
+                        <input type="text" id="first_name" className="mr-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Placeholder" required />
                         <p> /hr</p>
                     </div>
                 </div>
             </form> 
         </div>
       </div>
-    <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-        <div className="bg-[#00B676] h-1.5 rounded-full dark:bg-blue-500" style={{width: '80%'}}></div>
+    <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+        <div className="bg-[#00B676] h-1.5 rounded-full " style={{width: '80%'}}></div>
     </div>
     <div className="flex justify-between mt-8 pl-7 pr-7 pb-7">
             <NavLink to="/signup-freelancer-3" className="bg-gray-300 text-black rounded-md px-10 py-2">

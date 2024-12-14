@@ -9,7 +9,7 @@ function SignUp8() {
     return (
         <>
             <div style={gradientStyle}>
-                <h1 className="pl-7 pt-7">5/5 <b className="ml-3">Client Registration</b></h1>
+                <h1 className="pl-7 pt-7">8/8 <b className="ml-3">Client Registration</b></h1>
                 <div className="p-20">
                     <h1 className="text-4xl font-bold mb-4">PREVIEW PROFILE</h1>
                     <p>Feel free to make any final edits before submitting. Once live, you’ll be able to update your profile anytime.</p>
@@ -105,7 +105,7 @@ function SignUp8() {
                 </div>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-                <div className="bg-[#00B676] h-1.5 rounded-full dark:bg-blue-500" style={{width: '100%'}}></div>
+                <div className="bg-[#00B676] h-1.5 rounded-full " style={{width: '100%'}}></div>
             </div>
             <div className="flex justify-between mt-8 pl-7 pr-7 pb-7">
                     <NavLink to="/signup-client-7" className="bg-gray-300 text-black rounded-md px-10 py-2">

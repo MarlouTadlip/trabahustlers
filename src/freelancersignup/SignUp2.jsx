@@ -47,7 +47,7 @@ function SignUp2() {
         </div>
       </div>
     <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-        <div className="bg-[#00B676] h-1.5 rounded-full dark:bg-blue-500" style={{width: '40%'}}></div>
+        <div className="bg-[#00B676] h-1.5 rounded-full " style={{width: '40%'}}></div>
     </div>
     <div className="flex  mt-8 pl-7 pb-7">
             <NavLink to="/signup-freelancer-1" className="bg-gray-300 text-black rounded-md px-10 py-2">
