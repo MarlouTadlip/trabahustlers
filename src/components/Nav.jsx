@@ -27,7 +27,6 @@ const Nav = () => {
                     Post a Project
                 </NavLink>
 
-                {/* Dropdown for Browse */}
                 <div className="relative">
                     <button
                         onClick={() => toggleDropdown("browse")}
@@ -64,7 +63,6 @@ const Nav = () => {
                     )}
                 </div>
 
-                {/* Dropdown for My Work */}
                 <div className="relative">
                     <button
                         onClick={() => toggleDropdown("myWork")}
@@ -139,7 +137,6 @@ const Nav = () => {
                     )}
                 </div>
 
-                {/* Dropdown for Finances */}
                 <div className="relative">
                     <button
                         onClick={() => toggleDropdown("finances")}
