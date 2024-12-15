@@ -5,7 +5,6 @@ function PostProject() {
         <>
             <Nav />
             <div className="h-screen">
-                {/* Header Section */}
                 <div className="h-2/6 bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: "url('dashboard.svg')" }}>
                     <div className="p-20">
                         <h1 className="text-white text-4xl mb-5 font-bold">Post a Project</h1>
@@ -47,7 +46,7 @@ function PostProject() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-6 mb-6">
-                        <div className="bg-white p-5 rounded-md shadow-md">
+                        <div className="bg-[#E7E7E8] p-5 rounded-md shadow-md">
                             <h2 className="text-2xl font-semibold mb-4">Budget and Timeline</h2>
                             <label className="block mb-2">Budget Amount</label>
                             <input type="text" className="w-full p-2 border rounded" placeholder="Placeholder" />
@@ -61,18 +60,18 @@ function PostProject() {
                             <input type="date" className="w-full p-2 border rounded" />
                         </div>
 
-                        <div className="bg-white p-5 rounded-md shadow-md">
+                        <div className="bg-[#E7E7E8] p-5 rounded-md shadow-md">
                             <h2 className="text-2xl font-semibold mb-4">Project Images or Media</h2>
                             {[...Array(4)].map((_, index) => (
                                 <div key={index} className="flex items-center mb-2">
                                     <input type="text" className="w-full p-2 border rounded" placeholder="Placeholder" />
-                                    <button className="ml-2 bg-green-600 text-white px-3 py-2 rounded">Choose a file</button>
+                                    <button className="ml-2 bg-[#418B71] text-white px-3 py-2 rounded">Choose a file</button>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    <div className="bg-white p-5 rounded-md shadow-md mb-6">
+                    <div className="bg-[#E7E7E8] p-5 rounded-md shadow-md mb-6">
                         <h2 className="text-2xl font-semibold mb-4">Project Deliverables</h2>
                         <table className="w-full border-collapse border mb-4">
                             <thead>
@@ -87,7 +86,7 @@ function PostProject() {
                                     <td className="p-2 border">E-commerce Website Redesign</td>
                                     <td className="p-2 border">Jane Doe</td>
                                     <td className="p-2 border text-center">
-                                        <button className="text-green-600 mr-2">✏️</button>
+                                        <button className="text-[#418B71] mr-2">✏️</button>
                                         <button className="text-red-600">🗑️</button>
                                     </td>
                                 </tr>
@@ -95,7 +94,7 @@ function PostProject() {
                                     <td className="p-2 border">Social Media Marketing Specialist</td>
                                     <td className="p-2 border">Alice Baker</td>
                                     <td className="p-2 border text-center">
-                                        <button className="text-green-600 mr-2">✏️</button>
+                                        <button className="text-[#418B71] mr-2">✏️</button>
                                         <button className="text-red-600">🗑️</button>
                                     </td>
                                 </tr>
@@ -106,11 +105,11 @@ function PostProject() {
                             <input type="text" className="w-full p-2 border rounded" placeholder="Placeholder" />
 
                             <label className="block mt-4 mb-2">Description</label>
-                            <textarea className="w-full p-2 border rounded" rows="3" placeholder="Placeholder"></textarea>
+                            <textarea className="w-full p-2 border rounded" rows="10" placeholder="Placeholder"></textarea>
                         </div>
                     </div>
 
-                    <div className="bg-white p-5 rounded-md shadow-md mb-6">
+                    <div className="bg-[#E7E7E8] p-5 rounded-md shadow-md mb-6">
                         <h2 className="text-2xl font-semibold mb-4">Visibility Settings</h2>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
@@ -128,9 +127,8 @@ function PostProject() {
                         </div>
                     </div>
 
-                    {/* Buttons */}
                     <div className="flex justify-end gap-4">
-                        <button className="bg-green-600 text-white px-5 py-2 rounded">Publish</button>
+                        <button className="bg-[#418B71] text-white px-5 py-2 rounded">Publish</button>
                         <button className="border border-gray-300 px-5 py-2 rounded">Cancel</button>
                     </div>
                 </div>

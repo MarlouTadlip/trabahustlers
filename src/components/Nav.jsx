@@ -1,15 +1,12 @@
-import { NavLink, useNavigate } from 'react-router-dom';
-import { Mail, BellDot } from 'lucide-react';
+import { NavLink } from "react-router-dom";
+import { Mail, BellDot, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const Nav = () => {
-    const navigate = useNavigate();
+    const [openDropdown, setOpenDropdown] = useState(null);
 
-    // Function to handle dropdown navigation
-    const handleDropdownChange = (event) => {
-        const selectedValue = event.target.value;
-        if (selectedValue) {
-            navigate(selectedValue);
-        }
+    const toggleDropdown = (dropdown) => {
+        setOpenDropdown((prev) => (prev === dropdown ? null : dropdown));
     };
 
     return (
@@ -29,22 +26,161 @@ const Nav = () => {
                 <NavLink to="/post-project" className="hover:text-gray-400">
                     Post a Project
                 </NavLink>
-                <select
-                    onChange={handleDropdownChange}
-                    className="bg-[#418B71] text-white border-none outline-none hover:cursor-pointer"
-                >
-                    <option value="" disabled selected>
-                        Browse
-                    </option>
-                    <option value="/browse-jobs">Jobs</option>
-                    <option value="/browse-projects">Projects</option>
-                </select>
-                <NavLink to="/my-work" className="hover:text-gray-400">
-                    My Work
-                </NavLink>
-                <NavLink to="/finances" className="hover:text-gray-400">
-                    Finances
-                </NavLink>
+
+                {/* Dropdown for Browse */}
+                <div className="relative">
+                    <button
+                        onClick={() => toggleDropdown("browse")}
+                        className="hover:text-gray-400 flex items-center"
+                    >
+                        Browse <ChevronDown className="ml-2" />
+                    </button>
+                    {openDropdown === "browse" && (
+                        <div className="absolute mt-2 bg-white text-black rounded-md shadow-lg z-20">
+                            <NavLink
+                                to="/browse/jobs"
+                                className="block px-4 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Jobs
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/browse/talents"
+                                className="block px-4 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Talents
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/browse/projects"
+                                className="block px-4 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Projects
+                            </NavLink>
+                        </div>
+                    )}
+                </div>
+
+                {/* Dropdown for My Work */}
+                <div className="relative">
+                    <button
+                        onClick={() => toggleDropdown("myWork")}
+                        className="hover:text-gray-400 flex items-center"
+                    >
+                        My Work <ChevronDown className="ml-2" />
+                    </button>
+                    {openDropdown === "myWork" && (
+                        <div className="absolute mt-2 bg-white text-black rounded-md shadow-lg z-20">
+                            <button
+                                className="block pr-20 pl-4 py-2 cursor-default font-bold"
+                                onClick={(e) => e.preventDefault()}
+                            >
+                                Freelancer
+                            </button>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Proposals
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Manage Projects
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                My Projects
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <button
+                                className="block pr-10 pl-4 py-2 cursor-default font-bold"
+                                onClick={(e) => e.preventDefault()}
+                            >
+                                Client
+                            </button>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Invitations
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                Manage Jobs
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 mb-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                My Jobs
+                            </NavLink>
+                        </div>
+                    )}
+                </div>
+
+                {/* Dropdown for Finances */}
+                <div className="relative">
+                    <button
+                        onClick={() => toggleDropdown("finances")}
+                        className="hover:text-gray-400 flex items-center"
+                    >
+                        Finances <ChevronDown className="ml-2" />
+                    </button>
+                    {openDropdown === "finances" && (
+                        <div className="absolute mt-2 bg-white text-black rounded-md shadow-lg z-20">
+                            <button
+                                className="block pr-24 pl-4 py-2 cursor-default font-bold"
+                                onClick={(e) => e.preventDefault()}
+                            >
+                                Freelancer
+                            </button>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 mb-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                My Earnings
+                            </NavLink>
+                            <hr className="border-2"></hr>
+                            <button
+                                className="block pr-20 pl-4 py-2 cursor-default font-bold"
+                                onClick={(e) => e.preventDefault()}
+                            >
+                                Client
+                            </button>
+                            <hr className="border-2"></hr>
+                            <NavLink
+                                to="/my-work/task2"
+                                className="block pr-10 pl-7 py-2 mb-2 hover:bg-gray-100"
+                                onClick={() => setOpenDropdown(null)}
+                            >
+                                My Transactions
+                            </NavLink>
+                        </div>
+                    )}
+                </div>
             </div>
 
             <div className="flex space-x-8">
@@ -54,8 +190,8 @@ const Nav = () => {
                 <button>
                     <BellDot />
                 </button>
-                <div className="inline-block h-[50px] min-h-[1em] w-0.5 self-center bg-neutral-100 "></div>
-                <img src="pp.svg" alt="Profile" className="w-10 h-10 rounded-full" />
+                <div className="inline-block h-[50px] min-h-[1em] w-0.5 self-center bg-neutral-100"></div>
+                <img src="pp.svg" alt="profile" />
             </div>
         </nav>
     );
