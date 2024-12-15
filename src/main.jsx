@@ -30,6 +30,10 @@ import SignUp6Client from './clientsignup/SignUp6.jsx';
 import SignUp7Client from './clientsignup/SignUp7.jsx';
 import SignUp8Client from './clientsignup/SignUp8.jsx';
 
+import Dashboard from './dashboard.jsx';
+import Jobs from './browse/jobs.jsx';
+import PostProject from './PostProject.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -130,6 +134,18 @@ const router = createBrowserRouter([
   {
     path: '/signup-client-8',
     element: <SignUp8Client/>
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard/>
+  },
+  {
+    path: '/browse-jobs',
+    element: <Jobs/>
+  },
+  {
+    path: '/post-project',
+    element: <PostProject/>
   }
 ]);
 

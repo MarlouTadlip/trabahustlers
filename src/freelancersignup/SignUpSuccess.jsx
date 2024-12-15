@@ -13,7 +13,7 @@ function SignUpSuccess() {
                     <h1 className="text-5xl font-bold text-center mt-3">
                         Let’s get you started
                     </h1>
-                    <NavLink to="/signup-success" className="bg-[#418B71] text-white rounded-md w-56 py-3 mt-10 text-center shadow-md">
+                    <NavLink to="/dashboard" className="bg-[#418B71] text-white rounded-md w-56 py-3 mt-10 text-center shadow-md">
                         Get Started
                     </NavLink>
                 </div>

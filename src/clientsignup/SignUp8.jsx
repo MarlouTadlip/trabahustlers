@@ -19,8 +19,8 @@ function SignUp8() {
                             <button className="flex justify-center rounded-md w-28 py-2 bg-[#EF8F00] text-white"><Pencil size={20} className="mr-2"/>Edit</button>
                         </div>
                         <div className="flex h-80">
-                            <div className="w-1/5 p-28">
-                                <img src="Icon.png" alt="profile-pic"></img>
+                            <div className="w-1/5 p-10">
+                                <img src="pp.svg" alt="profile-pic" className="object-cover h-48 w-48"></img>
                             </div>
                             <div className="border-l border-black h-full"></div>
                             <div className="grid gap-4 w-4/5 p-5">
