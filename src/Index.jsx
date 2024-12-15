@@ -1,5 +1,5 @@
 import Nav from './landing/Nav.jsx';
-import { Search } from 'lucide-react';
+import { Search,Facebook,Mail,Twitter } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 function Index() {
@@ -74,63 +74,26 @@ function Index() {
           </div>
         </div>
       </div>
-
-        <div className="py-16">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-center mb-6">Freelancers</h3>
-              <img src="path/to/freelancer-image.jpg" alt="Freelancers" className="mx-auto mb-6" />
-              <ul className="space-y-4">
-                <li className="flex items-center gap-4">
-                  <span className="bg-green-500 text-white p-2 rounded-full">✔</span>
-                  <p>Job Search & Filtering</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-green-500 text-white p-2 rounded-full">✔</span>
-                  <p>Reliable Payment System</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-green-500 text-white p-2 rounded-full">✔</span>
-                  <p>Easy Bid Submission</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-green-500 text-white p-2 rounded-full">✔</span>
-                  <p>Multiple Withdrawal Options</p>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-center mb-6">Clients</h3>
-              <img src="path/to/client-image.jpg" alt="Clients" className="mx-auto mb-6" />
-              <ul className="space-y-4">
-                <li className="flex items-center gap-4">
-                  <span className="bg-orange-500 text-white p-2 rounded-full">✔</span>
-                  <p>Trusted Freelancers</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-orange-500 text-white p-2 rounded-full">✔</span>
-                  <p>Seamless Communication</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-orange-500 text-white p-2 rounded-full">✔</span>
-                  <p>Safe & Secure Payments</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="bg-orange-500 text-white p-2 rounded-full">✔</span>
-                  <p>Project Tools & Tracking</p>
-                </li>
-              </ul>
-            </div>
+      <div className="h-screen flex"> 
+        <div className="w-2/6 flex flex-col  justify-center ml-20">
+          <h1 className="text-5xl font-bold text-center mb-12 text-white">CLIENTS</h1>
+          <div className="grid grid-cols-2 gap-5 ">
+            <button className="bg-[#418B71] py-7 px-4 w-full rounded-lg text-white text-lg">Trusted Freelancers</button>
+            <button className="bg-[#EF8F00] py-7 px-4 w-full rounded-lg text-white text-lg">Seamless Communication</button>
+            <button className="bg-[#EF8F00] py-7 px-4 w-full rounded-lg text-white text-lg">Safe & Secure Payments</button>
+            <button className="bg-[#418B71] py-7 px-4 w-full rounded-lg text-white text-lg">Project Tools & Tracking</button>
           </div>
         </div>
-
+        <div className="w-4/6 bg-cover " style={{ backgroundImage: "url('landing4.svg')" }}>
+        </div> 
+      </div>
         <div
-          className="py-16"
+          className="py-10"
         >
-          <h2 className="text-4xl font-bold text-center mb-6">
+          <h2 className="text-5xl font-bold text-center mb-6 text-white mt-10">
             Success Stories from Our Thriving Community
           </h2>
+          <p className="text-center text-2xl text-white mb-20">Discover how our platform has empowered freelancers and clients to achieve their goals and bring projects to life.</p>
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img src="path/to/testimonial1.jpg" alt="Testimonial 1" className="w-16 h-16 rounded-full mx-auto mb-4" />
@@ -152,29 +115,55 @@ function Index() {
         </div>
 
         {/* Call to Action Section */}
-        <div
-          className="py-10 text-center text-white"
-        >
-          <h2 className="text-3xl font-bold mb-4">Ready to take the next step?</h2>
+        <div className="py-20  bg-[#418B71] m-10 text-white flex justify-between p-20 rounded-md">
+          <h2 className="text-5xl font-bold">Ready to take the next step?</h2>
           <NavLink to="/signup">
-            <button className="bg-white text-[#418B71] py-3 px-6 rounded-lg font-semibold">
+            <button className="bg-white text-[#418B71] py-4 px-20 rounded-lg font-semibold">
               Join Us
             </button>
           </NavLink>
         </div>
       </div> 
         {/* Footer */}
-      <footer className="bg-gray-800 py-6 text-center text-white">
-        <p>&copy; 2024 TrabaHustle. All Rights Reserved.</p>
-        <div className="mt-4">
-          <NavLink to="/privacy" className="text-white mx-2">
-            Privacy Policy
-          </NavLink>
-          <NavLink to="/terms" className="text-white mx-2">
-            Terms of Service
-          </NavLink>
-        </div>
-      </footer>
+        <nav className="flex justify-between items-center p-4 bg-white text-[#418B71] h-26">
+            <NavLink to="/dashboard" className="flex items-center">
+                <img src="Icon.png" alt="logo" className="w-15 h-15"/>
+                <div className="flex items-center p-5">
+                    <span className="text-2xl font-bold">
+                        T R A B A<span className="text-[#EF8F00]"> H U S T L E</span>
+                    </span>
+                </div>
+            </NavLink>
+
+            <div className="flex space-x-16">
+                <NavLink to="/post-job" className="hover:text-gray-400">
+                    About Us
+                </NavLink>
+                <NavLink to="/post-project" className="hover:text-gray-400">
+                    Support
+                </NavLink>
+                <NavLink to="/post-project" className="hover:text-gray-400">
+                    Privacy Policy
+                </NavLink>
+                <NavLink to="/post-project" className="hover:text-gray-400">
+                    Terms of Service
+                </NavLink>
+            </div>
+            <div className="flex space-x-8 px-10">
+                <button>
+                  <Facebook/>
+                </button>
+                <button>
+                  <Mail/>
+                </button>
+                <button>
+                  <Twitter/>
+                </button>
+               
+            </div>
+        </nav>
+        <hr className="border-[#418B71] border-2 mb-2"></hr>
+        <footer className="text-center opacity-50 my-4">&copy; 2024 Trabahustle. All Rights Reserved.</footer>
     </>
   );
 }
