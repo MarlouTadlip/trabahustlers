@@ -1,8 +1,8 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
-function Login(){
+function Login() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -22,7 +22,7 @@ function Login(){
       <div className="w-1/2 flex flex-col justify-center items-center bg-white p-8">
         <h1 className="text-3xl font-bold mb-4">WELCOME TO TRABAHUSTLE!</h1>
         <p className="text-gray-600 mb-6">Connecting you with skilled freelancers and valuable projects.</p>
-
+    
         <label className="block text-sm font-medium text-gray-700 mb-1">Username</label>
         <input
           type="text"
@@ -45,22 +45,25 @@ function Login(){
           </span>
         </div>
 
-        <div className="flex items-center mb-4">
-          <input
-            type="checkbox"
-            checked={rememberMe}
-            onChange={handleRememberMeChange}
-            className="mr-2"
-          />
-          <label className="text-sm text-gray-700">Remember Me</label>
+        <div className="flex justify-between items-center mb-4 w-5/6">
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              checked={rememberMe}
+              onChange={handleRememberMeChange}
+              className="mr-2"
+            />
+            <label className="text-md text-gray-700">Remember Me</label>
+          </div>
+          <p className="text-md text-[#418B71] cursor-pointer">Forgot Password?</p>
         </div>
 
-        <button className="bg-blue-500 text-white rounded-md px-4 py-2 mb-4">
+        <NavLink to='/dashboard'><button className="bg-[#418B71] text-white rounded-md px-20 py-3 mb-4">
           Login
-        </button>
+        </button></NavLink>
 
         <p className="text-sm text-gray-600">
-          Dont have an account?  <NavLink to="/signup" className="text-blue-500">Sign Up</NavLink>
+          Don't have an account? <NavLink to="/signup" className="text-blue-500">Sign Up</NavLink>
         </p>
       </div>
     </div>
