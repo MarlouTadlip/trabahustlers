@@ -1,4 +1,4 @@
-import Nav from './components/Nav.jsx';
+import Nav from '../components/Nav.jsx';
 
 function PostProject() {
     return (
@@ -14,7 +14,7 @@ function PostProject() {
 
                 <div className="p-10 bg-gray-100">
                     <div className="bg-[#E7E7E8] p-16 rounded-md shadow-md mb-6">
-                        <h2 className="text-2xl font-semibold mb-4">Project Details</h2>
+                        <h2 className="text-2xl font-semibold mb-4">Job Details</h2>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <div className="border-dashed border-2 border-gray-300 h-full flex items-center justify-center text-gray-400 cursor-pointer bg-white">
@@ -48,9 +48,9 @@ function PostProject() {
                     <div className="grid grid-cols-2 gap-6 mb-6">
                         <div className="bg-[#E7E7E8] p-5 rounded-md shadow-md">
                             <h2 className="text-2xl font-semibold mb-4">Budget and Timeline</h2>
+
                             <label className="block mb-2">Budget Amount</label>
                             <input type="text" className="w-full p-2 border rounded" placeholder="Placeholder" />
-
                             <label className="block mt-4 mb-2">Duration</label>
                             <select className="w-full p-2 border rounded">
                                 <option>Placeholder</option>

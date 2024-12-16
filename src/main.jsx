@@ -7,8 +7,8 @@ import FindWork from './landing/FindWork.jsx';
 import FindFreelancers from './landing/FindFreelancers.jsx';
 import Explore from './landing/Explore.jsx';
 import Help from './landing/Help.jsx';
-import Login from './Login.jsx';
-import SignUp from './SignUp.jsx';
+import Login from './pages/Login.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 import SignUp1 from './freelancersignup/SignUp1.jsx';
 import SignUp2 from './freelancersignup/SignUp2.jsx';
@@ -30,9 +30,10 @@ import SignUp6Client from './clientsignup/SignUp6.jsx';
 import SignUp7Client from './clientsignup/SignUp7.jsx';
 import SignUp8Client from './clientsignup/SignUp8.jsx';
 
-import Dashboard from './dashboard.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import Jobs from './browse/jobs.jsx';
-import PostProject from './PostProject.jsx';
+import PostProject from './pages/PostProject.jsx';
+import PostJob from './pages/PostJob.jsx'
 
 const router = createBrowserRouter([
   {
@@ -140,12 +141,16 @@ const router = createBrowserRouter([
     element: <Dashboard/>
   },
   {
-    path: '/browse-jobs',
+    path: '/browse/jobs',
     element: <Jobs/>
   },
   {
     path: '/post-project',
     element: <PostProject/>
+  },
+  {
+    path: '/post-job',
+    element: <PostJob/>
   }
 ]);
 

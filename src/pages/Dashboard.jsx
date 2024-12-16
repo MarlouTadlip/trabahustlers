@@ -1,4 +1,4 @@
-import Nav from './components/Nav.jsx';
+import Nav from '../components/Nav.jsx';
 import { Search } from 'lucide-react';
 
 function Dashboard() {
